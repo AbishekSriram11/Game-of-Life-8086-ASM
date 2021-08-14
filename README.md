@@ -16,10 +16,6 @@ A homage to the set of rules put forward by John Horton Conway.
 Written using the 80x86 assembly instruction set.
 Compiled with in DOSBox.
 
-Examples:
-![alt text][linearInitial]
-![alt text][linearFinal]
-
 + We implement this in assembler using grid 2d arrays
 A dense representation in which all the cells are encoded in a width*height matrix. The dead cells are represented by a zero (or false) and the alive cells are represented by a 1 (or true). The position of a cell on the grid is defined by its position in the matrix.
 + A sparse representation in which only living cells are encoded. Each living cell is represented by its position (int, int) on the grid. All these living cells are aggregated in a dictionary structure.

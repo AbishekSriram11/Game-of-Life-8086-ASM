@@ -1,0 +1,23 @@
+1) Game of life is a famous cellular automata
+2) The universe of the game of life is an infinite two-dimensional orthogonal grid of square cells,
+each of which is in one of two possible states alive or dead
+3) every cell interacts with its eight neighbours,which are the cells that are 
+horizontally vertically or daiganally adajcent.AT each step in time(generation),
+the following transitions occur:
+4) any live cell with fewer than two live neighbours dies,as if caused by under population.
+5) any live cell with two or three live neighbours lives on to the next generation.
+6)any live cell with more than three live neighbours dies as if by overcrowding
+7) any dead cell with exactly three live neighbours becomes a live cell as if by reproduction.
+
+8) osilating stavle life forms return back to previous state and dont continue to live on.. they return to previous state for every itreation.
+9) study of a particular pattern of life and apply this rules and stimulate and observe the change to get a new pattern(generation)or change
+10) a stable pattern of life is when each cell has exactly 3 neighbours a 2*2 grid pattern of cells is stable and strong
+11) glider pattern of cells are energised because its pattern repeat every 4 th cycle cells move and glider pattern again comes at every 4 th cycle(regaularity) independent existance of cells
+
+12)we implement this in assembler using grid 2d arrays
+A dense representation in which all the cells are encoded in a width*height matrix. The dead cells are represented by a zero (or false) and the alive cells are represented by a 1 (or true). The position of a cell on the grid is defined by its position in the matrix.
+A sparse representation in which only living cells are encoded. Each living cell is represented by its position (int, int) on the grid. All these living cells are aggregated in a dictionary structure.
+In our case, a sparse representation has the advantage, seeing as it requires less memory (since most cells will be dead) and allows us to iterate through the set of living cells only (since dead cells do not have direct effect on their neighbours).
+In any case, we implemented both representations so as to provide a performance baseline.
+We use 8086 instructions and programming to acheive this Game of Life.
+Any speiece population can be estimated whether,stable or ossilating stable or under populated or over populated by giving their cellular structure as input and stimulating them. 
